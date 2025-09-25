@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyml-c"
+version = "0.1.0"
+description = "Python bindings for a C machine learning library"
+readme = "README.md"
+authors = [
+    { name = "Hasan Shabani", email = "hasan.shabani2005@gmail.com" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = ["numpy", "pandas"]
+
+[project.urls]
+Homepage = "https://github.com/Shabani005/pyml-c"
+Repository = "https://github.com/Shabani005/pyml-c"
+
+[tool.setuptools.package-data]
+pyml = ["libcml.so"]
